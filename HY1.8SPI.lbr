@@ -58,30 +58,30 @@
 <description>HY1.8 SPI 1.8" LCD with SD Slot</description>
 <packages>
 <package name="HY-1.8SPI">
-<pad name="LED-" x="-0.5" y="17.78" drill="0.8" shape="long"/>
-<pad name="LED+" x="-0.5" y="15.24" drill="0.8" shape="long"/>
-<pad name="SDCS" x="-0.5" y="12.7" drill="0.8" shape="long"/>
-<pad name="SDMOSI" x="-0.5" y="10.16" drill="0.8" shape="long"/>
-<pad name="SDMISO" x="-0.5" y="7.62" drill="0.8" shape="long"/>
-<pad name="SDSCK" x="-0.5" y="5.08" drill="0.8" shape="long"/>
-<pad name="MISO" x="-0.5" y="2.54" drill="0.8" shape="long"/>
-<pad name="SCK" x="-0.5" y="0" drill="0.8" shape="long"/>
-<pad name="MOSI" x="-0.5" y="-2.54" drill="0.8" shape="long"/>
-<pad name="CS" x="-0.5" y="-5.08" drill="0.8" shape="long"/>
-<pad name="RESET" x="-0.5" y="-7.62" drill="0.8" shape="long"/>
-<pad name="NC3" x="-0.5" y="-10.16" drill="0.8" shape="long"/>
-<pad name="NC2" x="-0.5" y="-12.7" drill="0.8" shape="long"/>
-<pad name="NC1" x="-0.5" y="-15.24" drill="0.8" shape="long"/>
-<pad name="VCC" x="-0.5" y="-17.78" drill="0.8" shape="long"/>
-<pad name="GND" x="-0.5" y="-20.32" drill="0.8" shape="long"/>
-<wire x1="-2" y1="22" x2="-2" y2="-24" width="0.127" layer="51"/>
-<wire x1="-2" y1="-24" x2="48" y2="-24" width="0.127" layer="51"/>
-<wire x1="48" y1="-24" x2="48" y2="22" width="0.127" layer="51"/>
-<wire x1="48" y1="22" x2="-2" y2="22" width="0.127" layer="51"/>
-<text x="-1.27" y="19.05" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-22.86" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="45" y="19" drill="3.2"/>
-<hole x="45" y="-21" drill="3.2"/>
+<pad name="16" x="-23.36" y="17.78" drill="0.8" shape="long"/>
+<pad name="15" x="-23.36" y="15.24" drill="0.8" shape="long"/>
+<pad name="14" x="-23.36" y="12.7" drill="0.8" shape="long"/>
+<pad name="13" x="-23.36" y="10.16" drill="0.8" shape="long"/>
+<pad name="12" x="-23.36" y="7.62" drill="0.8" shape="long"/>
+<pad name="11" x="-23.36" y="5.08" drill="0.8" shape="long"/>
+<pad name="10" x="-23.36" y="2.54" drill="0.8" shape="long"/>
+<pad name="9" x="-23.36" y="0" drill="0.8" shape="long"/>
+<pad name="8" x="-23.36" y="-2.54" drill="0.8" shape="long"/>
+<pad name="7" x="-23.36" y="-5.08" drill="0.8" shape="long"/>
+<pad name="6" x="-23.36" y="-7.62" drill="0.8" shape="long"/>
+<pad name="5" x="-23.36" y="-10.16" drill="0.8" shape="long"/>
+<pad name="4" x="-23.36" y="-12.7" drill="0.8" shape="long"/>
+<pad name="3" x="-23.36" y="-15.24" drill="0.8" shape="long"/>
+<pad name="2" x="-23.36" y="-17.78" drill="0.8" shape="long"/>
+<pad name="1" x="-23.36" y="-20.32" drill="0.8" shape="long"/>
+<wire x1="-24.86" y1="22" x2="-24.86" y2="-24" width="0.127" layer="51"/>
+<wire x1="-24.86" y1="-24" x2="25.14" y2="-24" width="0.127" layer="51"/>
+<wire x1="25.14" y1="-24" x2="25.14" y2="22" width="0.127" layer="51"/>
+<wire x1="25.14" y1="22" x2="-24.86" y2="22" width="0.127" layer="51"/>
+<text x="-24.13" y="19.05" size="1.27" layer="25">&gt;NAME</text>
+<text x="-24.13" y="-22.86" size="1.27" layer="27">&gt;VALUE</text>
+<hole x="22.14" y="19" drill="3.2"/>
+<hole x="22.14" y="-21" drill="3.2"/>
 </package>
 </packages>
 <symbols>
@@ -117,19 +117,19 @@
 <devices>
 <device name="" package="HY-1.8SPI">
 <connects>
-<connect gate="G$1" pin="CS" pad="CS"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="LED+" pad="LED+"/>
-<connect gate="G$1" pin="LED-" pad="LED-"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="RESET" pad="RESET"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="SDCS" pad="SDCS"/>
-<connect gate="G$1" pin="SDMISO" pad="SDMISO"/>
-<connect gate="G$1" pin="SDMOSI" pad="SDMOSI"/>
-<connect gate="G$1" pin="SDSCK" pad="SDSCK"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="CS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="LED+" pad="15"/>
+<connect gate="G$1" pin="LED-" pad="16"/>
+<connect gate="G$1" pin="MISO" pad="10"/>
+<connect gate="G$1" pin="MOSI" pad="8"/>
+<connect gate="G$1" pin="RESET" pad="6"/>
+<connect gate="G$1" pin="SCK" pad="9"/>
+<connect gate="G$1" pin="SDCS" pad="14"/>
+<connect gate="G$1" pin="SDMISO" pad="12"/>
+<connect gate="G$1" pin="SDMOSI" pad="13"/>
+<connect gate="G$1" pin="SDSCK" pad="11"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

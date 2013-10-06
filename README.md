@@ -11,6 +11,7 @@ For the Wavecom WMOi3 GSM Modem connected with a ribbon cable to a 1.27mm pitch 
 
 ##Jupiter_12_TU35-D400.lbr
 For the Navman Jupiter 12 GPS Receiver, TU35-D410 and TU35-D420 Series. Uses a 2mm pitch 20 pin DIL pin header.
+Options for with and without the board outline and mounting holes.
 
 ##HY1.8SPI.lbr
 For the cheap "HY1.8 SPI" 1.8" LCD with SD slot that can be found on ebay.

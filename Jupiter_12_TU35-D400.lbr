@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -57,67 +57,91 @@
 <library>
 <packages>
 <package name="TU35-D400">
-<pad name="P$1" x="2" y="29" drill="1.016" diameter="1.6764"/>
-<pad name="P$2" x="4" y="29" drill="1.016" diameter="1.6764"/>
-<pad name="P$3" x="2" y="27" drill="1.016" diameter="1.6764"/>
-<pad name="P$4" x="4" y="27" drill="1.016" diameter="1.6764"/>
-<pad name="P$5" x="2" y="25" drill="1.016" diameter="1.6764"/>
-<pad name="P$6" x="4" y="25" drill="1.016" diameter="1.6764"/>
-<pad name="P$7" x="2" y="23" drill="1.016" diameter="1.6764"/>
-<pad name="P$8" x="4" y="23" drill="1.016" diameter="1.6764"/>
-<pad name="P$9" x="2" y="21" drill="1.016" diameter="1.6764"/>
-<pad name="P$10" x="4" y="21" drill="1.016" diameter="1.6764"/>
-<pad name="P$11" x="2" y="19" drill="1.016" diameter="1.6764"/>
-<pad name="P$12" x="4" y="19" drill="1.016" diameter="1.6764"/>
-<pad name="P$13" x="2" y="17" drill="1.016" diameter="1.6764"/>
-<pad name="P$14" x="4" y="17" drill="1.016" diameter="1.6764"/>
-<pad name="P$15" x="2" y="15" drill="1.016" diameter="1.6764"/>
-<pad name="P$16" x="4" y="15" drill="1.016" diameter="1.6764"/>
-<pad name="P$17" x="2" y="13" drill="1.016" diameter="1.6764"/>
-<pad name="P$18" x="4" y="13" drill="1.016" diameter="1.6764"/>
-<pad name="P$19" x="2" y="11" drill="1.016" diameter="1.6764"/>
-<pad name="P$20" x="4" y="11" drill="1.016" diameter="1.6764"/>
-<wire x1="0" y1="0" x2="71.1" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="40.64" x2="71.1" y2="40.64" width="0.127" layer="21"/>
-<wire x1="71.1" y1="40.64" x2="71.11" y2="40.64" width="0.127" layer="21"/>
-<wire x1="0" y1="40.64" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="71.1" y1="0" x2="71.1" y2="40.64" width="0.127" layer="21"/>
-<hole x="3" y="3" drill="3.2"/>
-<hole x="3" y="37.29" drill="3.2"/>
-<hole x="67.77" y="37.29" drill="3.2"/>
-<hole x="67.77" y="3" drill="3.2"/>
-<text x="7.62" y="1.27" size="1.27" layer="25">&gt;NAME</text>
-<text x="8.89" y="38.1" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="1" x="-32.29" y="8.68" drill="1.016" diameter="1.6764"/>
+<pad name="2" x="-30.29" y="8.68" drill="1.016" diameter="1.6764"/>
+<pad name="3" x="-32.29" y="6.68" drill="1.016" diameter="1.6764"/>
+<pad name="4" x="-30.29" y="6.68" drill="1.016" diameter="1.6764"/>
+<pad name="5" x="-32.29" y="4.68" drill="1.016" diameter="1.6764"/>
+<pad name="6" x="-30.29" y="4.68" drill="1.016" diameter="1.6764"/>
+<pad name="7" x="-32.29" y="2.68" drill="1.016" diameter="1.6764"/>
+<pad name="8" x="-30.29" y="2.68" drill="1.016" diameter="1.6764"/>
+<pad name="9" x="-32.29" y="0.68" drill="1.016" diameter="1.6764"/>
+<pad name="10" x="-30.29" y="0.68" drill="1.016" diameter="1.6764"/>
+<pad name="11" x="-32.29" y="-1.32" drill="1.016" diameter="1.6764"/>
+<pad name="12" x="-30.29" y="-1.32" drill="1.016" diameter="1.6764"/>
+<pad name="13" x="-32.29" y="-3.32" drill="1.016" diameter="1.6764"/>
+<pad name="14" x="-30.29" y="-3.32" drill="1.016" diameter="1.6764"/>
+<pad name="15" x="-32.29" y="-5.32" drill="1.016" diameter="1.6764"/>
+<pad name="16" x="-30.29" y="-5.32" drill="1.016" diameter="1.6764"/>
+<pad name="17" x="-32.29" y="-7.32" drill="1.016" diameter="1.6764"/>
+<pad name="18" x="-30.29" y="-7.32" drill="1.016" diameter="1.6764"/>
+<pad name="19" x="-32.29" y="-9.32" drill="1.016" diameter="1.6764"/>
+<pad name="20" x="-30.29" y="-9.32" drill="1.016" diameter="1.6764"/>
+<wire x1="-34.29" y1="-20.32" x2="36.81" y2="-20.32" width="0.127" layer="21"/>
+<wire x1="-34.29" y1="20.32" x2="36.81" y2="20.32" width="0.127" layer="21"/>
+<wire x1="36.81" y1="20.32" x2="36.82" y2="20.32" width="0.127" layer="21"/>
+<wire x1="-34.29" y1="20.32" x2="-34.29" y2="-20.32" width="0.127" layer="21"/>
+<wire x1="36.81" y1="-20.32" x2="36.81" y2="20.32" width="0.127" layer="21"/>
+<hole x="-31.29" y="-17.32" drill="3.2"/>
+<hole x="-31.29" y="16.97" drill="3.2"/>
+<hole x="33.48" y="16.97" drill="3.2"/>
+<hole x="33.48" y="-17.32" drill="3.2"/>
+<text x="-26.67" y="-19.05" size="1.27" layer="25">&gt;NAME</text>
+<text x="-25.4" y="17.78" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="TU35-D400_NO_OUTLINE">
+<pad name="1" x="-1.81" y="8.68" drill="1.016" diameter="1.6764"/>
+<pad name="2" x="0.19" y="8.68" drill="1.016" diameter="1.6764"/>
+<pad name="3" x="-1.81" y="6.68" drill="1.016" diameter="1.6764"/>
+<pad name="4" x="0.19" y="6.68" drill="1.016" diameter="1.6764"/>
+<pad name="5" x="-1.81" y="4.68" drill="1.016" diameter="1.6764"/>
+<pad name="6" x="0.19" y="4.68" drill="1.016" diameter="1.6764"/>
+<pad name="7" x="-1.81" y="2.68" drill="1.016" diameter="1.6764"/>
+<pad name="8" x="0.19" y="2.68" drill="1.016" diameter="1.6764"/>
+<pad name="9" x="-1.81" y="0.68" drill="1.016" diameter="1.6764"/>
+<pad name="10" x="0.19" y="0.68" drill="1.016" diameter="1.6764"/>
+<pad name="11" x="-1.81" y="-1.32" drill="1.016" diameter="1.6764"/>
+<pad name="12" x="0.19" y="-1.32" drill="1.016" diameter="1.6764"/>
+<pad name="13" x="-1.81" y="-3.32" drill="1.016" diameter="1.6764"/>
+<pad name="14" x="0.19" y="-3.32" drill="1.016" diameter="1.6764"/>
+<pad name="15" x="-1.81" y="-5.32" drill="1.016" diameter="1.6764"/>
+<pad name="16" x="0.19" y="-5.32" drill="1.016" diameter="1.6764"/>
+<pad name="17" x="-1.81" y="-7.32" drill="1.016" diameter="1.6764"/>
+<pad name="18" x="0.19" y="-7.32" drill="1.016" diameter="1.6764"/>
+<pad name="19" x="-1.81" y="-9.32" drill="1.016" diameter="1.6764"/>
+<pad name="20" x="0.19" y="-9.32" drill="1.016" diameter="1.6764"/>
+<text x="-3.302" y="-10.16" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.048" y="-10.16" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
 <symbol name="TU35-D400">
-<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
-<pin name="PREAMP" x="-15.24" y="12.7" length="middle"/>
-<pin name="PWRIN" x="-15.24" y="10.16" length="middle"/>
-<pin name="VBATT" x="-15.24" y="7.62" length="middle"/>
-<pin name="PWRIN2" x="-15.24" y="5.08" length="middle"/>
-<pin name="M_RST" x="-15.24" y="2.54" length="middle"/>
-<pin name="GYRO" x="-15.24" y="0" length="middle"/>
-<pin name="GPIO2" x="-15.24" y="-2.54" length="middle"/>
-<pin name="GPIO3" x="-15.24" y="-5.08" length="middle"/>
-<pin name="GPIO4" x="-15.24" y="-7.62" length="middle"/>
-<pin name="GND" x="-15.24" y="-10.16" length="middle"/>
-<pin name="SDO1" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="SDI1" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="GND2" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="SDO2" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="SDI2" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="GND3" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="GND4" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND5" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="TMARK" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="10KHZ" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<text x="-10.16" y="16.51" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="PREAMP" x="-15.24" y="10.16" length="middle"/>
+<pin name="PWRIN" x="-15.24" y="7.62" length="middle"/>
+<pin name="VBATT" x="-15.24" y="5.08" length="middle"/>
+<pin name="PWRIN2" x="-15.24" y="2.54" length="middle"/>
+<pin name="M_RST" x="-15.24" y="0" length="middle"/>
+<pin name="GYRO" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GPIO2" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GPIO3" x="-15.24" y="-7.62" length="middle"/>
+<pin name="GPIO4" x="-15.24" y="-10.16" length="middle"/>
+<pin name="GND" x="-15.24" y="-12.7" length="middle"/>
+<pin name="SDO1" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="SDI1" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="GND2" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="SDO2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SDI2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="GND3" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND4" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND5" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="TMARK" x="17.78" y="-10.16" length="middle" rot="R180"/>
+<pin name="10KHZ" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<text x="-10.16" y="13.97" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -125,31 +149,68 @@
 <description>Navman Jupiter 12 GPS Receiver
 TU35-D410 and TU35-D420 Series</description>
 <gates>
-<gate name="G$1" symbol="TU35-D400" x="-2.54" y="0"/>
+<gate name="G$1" symbol="TU35-D400" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="TU35-D400">
 <connects>
-<connect gate="G$1" pin="10KHZ" pad="P$20"/>
-<connect gate="G$1" pin="GND" pad="P$10"/>
-<connect gate="G$1" pin="GND2" pad="P$13"/>
-<connect gate="G$1" pin="GND3" pad="P$16"/>
-<connect gate="G$1" pin="GND4" pad="P$17"/>
-<connect gate="G$1" pin="GND5" pad="P$18"/>
-<connect gate="G$1" pin="GPIO2" pad="P$7"/>
-<connect gate="G$1" pin="GPIO3" pad="P$8"/>
-<connect gate="G$1" pin="GPIO4" pad="P$9"/>
-<connect gate="G$1" pin="GYRO" pad="P$6"/>
-<connect gate="G$1" pin="M_RST" pad="P$5"/>
-<connect gate="G$1" pin="PREAMP" pad="P$1"/>
-<connect gate="G$1" pin="PWRIN" pad="P$2"/>
-<connect gate="G$1" pin="PWRIN2" pad="P$4"/>
-<connect gate="G$1" pin="SDI1" pad="P$12"/>
-<connect gate="G$1" pin="SDI2" pad="P$15"/>
-<connect gate="G$1" pin="SDO1" pad="P$11"/>
-<connect gate="G$1" pin="SDO2" pad="P$14"/>
-<connect gate="G$1" pin="TMARK" pad="P$19"/>
-<connect gate="G$1" pin="VBATT" pad="P$3"/>
+<connect gate="G$1" pin="10KHZ" pad="20"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="GND2" pad="13"/>
+<connect gate="G$1" pin="GND3" pad="16"/>
+<connect gate="G$1" pin="GND4" pad="17"/>
+<connect gate="G$1" pin="GND5" pad="18"/>
+<connect gate="G$1" pin="GPIO2" pad="7"/>
+<connect gate="G$1" pin="GPIO3" pad="8"/>
+<connect gate="G$1" pin="GPIO4" pad="9"/>
+<connect gate="G$1" pin="GYRO" pad="6"/>
+<connect gate="G$1" pin="M_RST" pad="5"/>
+<connect gate="G$1" pin="PREAMP" pad="1"/>
+<connect gate="G$1" pin="PWRIN" pad="2"/>
+<connect gate="G$1" pin="PWRIN2" pad="4"/>
+<connect gate="G$1" pin="SDI1" pad="12"/>
+<connect gate="G$1" pin="SDI2" pad="15"/>
+<connect gate="G$1" pin="SDO1" pad="11"/>
+<connect gate="G$1" pin="SDO2" pad="14"/>
+<connect gate="G$1" pin="TMARK" pad="19"/>
+<connect gate="G$1" pin="VBATT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TU35-D400_NO_OUTLINE">
+<description>Navman Jupiter 12 GPS Receiver
+TU35-D410 and TU35-D420 Series
+Without module outline or mounting holes.</description>
+<gates>
+<gate name="G$1" symbol="TU35-D400" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TU35-D400_NO_OUTLINE">
+<connects>
+<connect gate="G$1" pin="10KHZ" pad="20"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="GND2" pad="13"/>
+<connect gate="G$1" pin="GND3" pad="16"/>
+<connect gate="G$1" pin="GND4" pad="17"/>
+<connect gate="G$1" pin="GND5" pad="18"/>
+<connect gate="G$1" pin="GPIO2" pad="7"/>
+<connect gate="G$1" pin="GPIO3" pad="8"/>
+<connect gate="G$1" pin="GPIO4" pad="9"/>
+<connect gate="G$1" pin="GYRO" pad="6"/>
+<connect gate="G$1" pin="M_RST" pad="5"/>
+<connect gate="G$1" pin="PREAMP" pad="1"/>
+<connect gate="G$1" pin="PWRIN" pad="2"/>
+<connect gate="G$1" pin="PWRIN2" pad="4"/>
+<connect gate="G$1" pin="SDI1" pad="12"/>
+<connect gate="G$1" pin="SDI2" pad="15"/>
+<connect gate="G$1" pin="SDO1" pad="11"/>
+<connect gate="G$1" pin="SDO2" pad="14"/>
+<connect gate="G$1" pin="TMARK" pad="19"/>
+<connect gate="G$1" pin="VBATT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
