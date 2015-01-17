@@ -20,3 +20,5 @@ For the cheap "HY1.8 SPI" 1.8" LCD with SD slot that can be found on ebay.
 For the ILSoft 1.5" Colour OLED Breakout Board from http://electronics.ilsoft.co.uk/ColourOLED.aspx
 
 
+##ESP8266_ESP-03.lbr
+For the ESP-03 ESP8266 WiFi board.
